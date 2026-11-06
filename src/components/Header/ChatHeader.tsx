@@ -12,7 +12,7 @@ export default function ChatHeader() {
 }
 
 const Wrapper = styled.div`
-  height: 62px;
+  min-height: 62px;
   background-color: #3f3f3f;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   display: flex;

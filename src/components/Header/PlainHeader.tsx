@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import React from "react";
 
 export default function PlainHeader() {
   return (
@@ -11,7 +10,7 @@ export default function PlainHeader() {
 }
 
 const Wrapper = styled.div`
-  height: 62px;
+  min-height: 62px;
   border-radius: 10px;
   background-color: #3f3f3f;
   box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.25);
