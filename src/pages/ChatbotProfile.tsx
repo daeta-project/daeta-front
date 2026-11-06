@@ -34,11 +34,15 @@ const Main = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 16px;
+  justify-content: center;
+  margin: 0 16px;
   gap: 42px;
-`;
+`; //으아아
 
 const Footer = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-bottom: 14px;
 `;
