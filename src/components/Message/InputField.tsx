@@ -5,6 +5,7 @@ export default function InputField() {
 }
 
 const Wrap = styled.textarea`
+  -webkit-appearance: none;
   resize: none;
   background-color: #6b6b6b;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
@@ -13,12 +14,10 @@ const Wrap = styled.textarea`
   color: white;
   border-radius: 30px;
   padding: 10px 16px;
-  max-height: 50px;
-  inline-size: 100%;
-  field-sizing: content;
-  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 
-  font-family: Pretendard;
   font-weight: 500;
   font-size: 16px;
   ::placeholder {
