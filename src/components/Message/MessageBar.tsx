@@ -26,6 +26,7 @@ const Wrap = styled.div`
 const Inner = styled.div`
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 8px;
   width: calc(100% - 39px);
 `;
