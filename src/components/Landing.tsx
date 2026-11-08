@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import Logoimg from "../assets/Logo.svg?react";
+import Logoimg from "../assets/Logo.svg";
 
 export default function Landing() {
   return (

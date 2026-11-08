@@ -14,7 +14,7 @@ export default function Chatroom() {
         <Main>
           <AIText
             ImgSrc="/src/assets/Logo.svg"
-            content="안녕하세요우와아아아아아긴글"
+            content="안녕하세요우와아아아아아긴글근데 긴글을 어떻게 처리해야되지"
           />
           <UserText ImgSrc="/src/assets/Logo.svg" content="넹" />
         </Main>

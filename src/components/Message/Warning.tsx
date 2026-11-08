@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import WarningIcon from "../assets/WarningIcon.svg?react";
+import WarningIcon from "../assets/WarningIcon.svg";
 
 interface WarningProps {
   text: string;
