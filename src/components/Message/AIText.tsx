@@ -4,6 +4,7 @@ interface AIProps {
   ImgSrc: string;
   content: string;
 }
+
 export default function AIText({ ImgSrc, content }: AIProps) {
   return (
     <Wrap>
@@ -35,4 +36,5 @@ const Text = styled.div`
   padding: 8px;
   border-radius: 16px;
   margin-top: 20px;
+  max-width: 70%;
 `;
