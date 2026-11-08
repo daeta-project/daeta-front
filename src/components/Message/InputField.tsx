@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export default function InputField() {
-  return <Wrap placeholder="Enter texts..."></Wrap>;
+  return <Wrap maxLength={400} placeholder="Enter texts..."></Wrap>;
 }
 
 const Wrap = styled.textarea`
@@ -16,7 +16,8 @@ const Wrap = styled.textarea`
   max-height: 50px;
   inline-size: 100%;
   field-sizing: content;
-  overflow: hidden;
+  overflow: auto;
+  box-sizing: border-box;
 
   font-family: Pretendard;
   font-weight: 500;
@@ -24,5 +25,10 @@ const Wrap = styled.textarea`
   ::placeholder {
     color: white;
     font-weight: 500;
+  }
+
+  ::-webkit-scrollbar {
+    //스크롤바 안보이게 해줌
+    display: none;
   }
 `;
