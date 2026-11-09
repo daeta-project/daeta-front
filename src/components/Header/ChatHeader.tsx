@@ -23,4 +23,8 @@ const Wrapper = styled.div`
     width: 24px;
     height: 24px;
   }
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 `;
