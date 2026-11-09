@@ -47,7 +47,7 @@ const Wrap = styled.div`
 `;
 
 const Main = styled.div`
-  margin: 6px;
+  margin: 70px 6px 0;
   gap: 22px;
   display: flex;
   flex-direction: column;
