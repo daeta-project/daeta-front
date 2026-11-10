@@ -35,7 +35,7 @@ const Main = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 16px;
+  margin: 62px 16px;
   gap: 42px;
 `; //으아아
 
