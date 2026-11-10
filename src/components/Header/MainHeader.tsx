@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import React from "react";
 
-export default function PlainHeader() {
+export default function MainHeader() {
   return (
     <Wrapper>
       <img src="/src/assets/Logo.svg" alt="로고" />
@@ -11,7 +11,7 @@ export default function PlainHeader() {
 }
 
 const Wrapper = styled.div`
-  min-height: 62px;
+  height: 62px;
   border-radius: 10px;
   background-color: #3f3f3f;
   box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.25);
