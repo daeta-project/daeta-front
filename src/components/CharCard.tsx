@@ -17,7 +17,7 @@ export default function CharCard({
   return (
     <>
       <Wrapper>
-        <img src={ImgSrc} alt="" />{" "}
+        <img src={ImgSrc} alt="" />
         <Namerge>
           <Title>
             <NameBlock>{Name}</NameBlock>
