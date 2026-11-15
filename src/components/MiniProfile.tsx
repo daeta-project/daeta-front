@@ -7,7 +7,7 @@ interface MiniProfileProps {
   $ImgSize?: number;
   $numbersize?: number;
   $numberweight?: number;
-  $fontsize?: number;
+  $namesize?: number;
 }
 
 interface StyleProps {
@@ -21,29 +21,36 @@ export default function MiniProfile({
   ImgSrc,
   name,
   number,
+  $ImgSize,
+  $numbersize,
+  $numberweight,
+  $namesize,
 }: MiniProfileProps) {
   return (
     <Wrap>
-      <img src={ImgSrc} alt="" />
+      <ProfileImage src={ImgSrc} $ImgSize={$ImgSize} />
       <Texts>
-        <Number>{number}등</Number>
-        <Name>{name}</Name>
+        <Number $numbersize={$numbersize} $numberweight={$numberweight}>
+          {number}등
+        </Number>
+        <Name $namesize={$namesize}>{name}</Name>
       </Texts>
     </Wrap>
   );
 }
 
 const Wrap = styled.div<StyleProps>`
-  img {
-    background-color: aliceblue;
-    width: ${(props) => props.$ImgSize}px;
-    height: ${(props) => props.$ImgSize}px;
-  }
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 101px;
+`;
+const ProfileImage = styled.img<StyleProps>`
+  background-color: aliceblue;
+  border-radius: 50%;
+  width: ${(props) => props.$ImgSize}px;
+  height: ${(props) => props.$ImgSize}px;
 `;
 
 const Number = styled.p<StyleProps>`

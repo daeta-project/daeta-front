@@ -19,12 +19,13 @@ const Wrap = styled.div`
   height: 100dvh;
   background-color: #3f3f3f;
   display: flex;
-  gap: 8px;
 `;
 
 const Main = styled.div`
-  height: 100%;
+  height: 100dvh;
   padding-top: 72px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  gap: 28px;
 `;
