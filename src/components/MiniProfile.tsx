@@ -51,6 +51,7 @@ const ProfileImage = styled.img<StyleProps>`
   border-radius: 50%;
   width: ${(props) => props.$ImgSize}px;
   height: ${(props) => props.$ImgSize}px;
+  z-index: 1;
 `;
 
 const Number = styled.p<StyleProps>`
