@@ -9,7 +9,17 @@ export default function Result() {
       <TestHeader />
       <Main>
         <Ranking />
-        <CharProfileFrame ImgSrc=" " name="ㅇㅇㅇ 선생님" Content="ㄱㄴㄷ" />
+        <List>
+          <First>
+            <Crown src="/src/assets/crown.svg" alt="" />
+            <CharProfileFrame
+              ImgSrc=" "
+              name="ㅇㅇㅇ 선생님"
+              Content="ㄱㄴㄷ"
+            />
+          </First>
+          <CharProfileFrame ImgSrc=" " name="ㅇㅇㅇ 선생님" Content="ㄱㄴㄷ" />
+        </List>
       </Main>
     </Wrap>
   );
@@ -28,4 +38,20 @@ const Main = styled.div`
   display: flex;
   flex-direction: column;
   gap: 28px;
+`;
+
+const List = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+`;
+
+const First = styled.div``;
+
+const Crown = styled.img`
+  width: 16px;
+  height: 13px;
+  position: absolute;
+  display: flex;
+  margin: 10px 47px;
 `;
