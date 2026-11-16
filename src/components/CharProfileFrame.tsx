@@ -28,9 +28,9 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   gap: 46px;
-  margin: 12px 16px 12px 16px;
+  padding: 13px 22px;
   img {
     width: 36px;
     height: 36px;
@@ -38,6 +38,7 @@ const Wrapper = styled.div`
   }
   width: 100dvw;
   height: 62px;
+  box-sizing: border-box;
 `;
 
 const Name = styled.p`
@@ -56,5 +57,5 @@ const Text = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 20px;
+  gap: 24px;
 `;

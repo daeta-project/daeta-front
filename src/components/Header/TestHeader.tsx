@@ -11,7 +11,7 @@ export default function TestHeader() {
 }
 
 const Wrapper = styled.div`
-  min-height: 72px;
+  height: 72px;
   border-radius: 10px;
   background-color: #3f3f3f;
   display: flex;

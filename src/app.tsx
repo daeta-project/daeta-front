@@ -4,6 +4,7 @@ import ChatbotProfile from "./pages/ChatbotProfile";
 import Login from "./pages/Login";
 import Test from "./pages/Test";
 import Chatroom from "./pages/Chatroom";
+import Result from "./pages/Result";
 
 export default function App() {
   return (
@@ -14,10 +15,11 @@ export default function App() {
         <Route path="/Test" element={<Test />} />
         <Route path="/ChatbotProfile" element={<ChatbotProfile />} />
         <Route path="/Chatroom" element={<Chatroom />} />
+        <Route path="/Result" element={<Result />} />
       </Routes>
     </>
   );
 }
 
-// Login->Test->Home->Propfile->Chatroom
+// Login->Test->Result->Home->Propfile->Chatroom
 //                  ->Mypage
