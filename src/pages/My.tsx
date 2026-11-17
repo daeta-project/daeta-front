@@ -1,6 +1,8 @@
 import styled from "@emotion/styled";
 import MyHeader from "../components/Header/MyHeader";
 import UserInfo from "../components/UserInfo";
+import LogoutButton from "../components/Button/LogoutButton";
+import AccountDeleteButton from "../components/Button/AccountDeleteButton";
 
 export default function My() {
   return (
@@ -8,6 +10,8 @@ export default function My() {
       <MyHeader />
       <Main>
         <UserInfo ImgSrc="/src/assets/Logo.svg" email="ganada@gmail.com" />
+        <LogoutButton />
+        <AccountDeleteButton />
       </Main>
     </Wrap>
   );
@@ -23,5 +27,5 @@ const Main = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
 `;
