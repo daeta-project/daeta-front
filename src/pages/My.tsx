@@ -1,9 +1,12 @@
-import React from 'react'
+import styled from "@emotion/styled";
+import MyHeader from "../components/Header/MyHeader";
 
 export default function My() {
   return (
-    <div>
-      
-    </div>
-  )
+    <Wrap>
+      <MyHeader />
+    </Wrap>
+  );
 }
+
+const Wrap = styled.div``;
